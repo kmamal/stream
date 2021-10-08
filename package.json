@@ -1,0 +1,19 @@
+{
+  "version": "0.0.0",
+  "name": "@kmamal/stream",
+  "description": "stream",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kmamal/stream.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./scripts/run-tests.sh",
+    "update-exports": "./scripts/update-exports.sh"
+  },
+  "license": "MIT",
+  "exports": {
+    "./consume": "./src/consume.js",
+    "./lines": "./src/lines.js"
+  }
+}

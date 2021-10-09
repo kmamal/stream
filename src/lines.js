@@ -1,6 +1,6 @@
-const { Transport } = require('stream')
+const { Transform } = require('stream')
 
-class Lines extends Transport {
+class Lines extends Transform {
 	constructor (options) {
 		super({ ...options, readableObjectMode: true })
 		this._rest = ''

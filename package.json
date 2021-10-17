@@ -13,9 +13,11 @@
   },
   "license": "MIT",
   "exports": {
+    "./filter": "./src/filter.js",
     "./write": "./src/write.js",
     "./consume": "./src/consume.js",
     "./read": "./src/read.js",
-    "./splitter": "./src/splitter.js"
+    "./splitter": "./src/splitter.js",
+    "./mapper": "./src/mapper.js"
   }
 }

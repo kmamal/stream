@@ -16,6 +16,6 @@
     "./write": "./src/write.js",
     "./consume": "./src/consume.js",
     "./read": "./src/read.js",
-    "./lines": "./src/lines.js"
+    "./splitter": "./src/splitter.js"
   }
 }

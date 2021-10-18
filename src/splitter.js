@@ -1,7 +1,7 @@
 const { Transform } = require('stream')
 
 class Splitter extends Transform {
-	constructor (separator, options) {
+	constructor (separator, options = {}) {
 		super({ ...options, readableObjectMode: true })
 		this._saparator = separator
 		this._rest = ''

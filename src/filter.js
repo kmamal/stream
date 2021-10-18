@@ -1,7 +1,7 @@
 const { Transform } = require('stream')
 
 class Filter extends Transform {
-	constructor (fnFilter, options) {
+	constructor (fnFilter, options = {}) {
 		super({
 			...options,
 			readableObjectMode: true,

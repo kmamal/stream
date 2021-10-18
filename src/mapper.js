@@ -1,7 +1,7 @@
 const { Transform } = require('stream')
 
 class Mapper extends Transform {
-	constructor (fnMap, options) {
+	constructor (fnMap, options = {}) {
 		super({
 			...options,
 			readableObjectMode: true,

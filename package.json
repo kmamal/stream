@@ -15,9 +15,13 @@
   "exports": {
     "./filter": "./src/filter.js",
     "./write": "./src/write.js",
+    "./split": "./src/split.js",
     "./consume": "./src/consume.js",
     "./read": "./src/read.js",
-    "./splitter": "./src/splitter.js",
-    "./mapper": "./src/mapper.js"
+    "./append": "./src/append.js",
+    "./prepend": "./src/prepend.js",
+    "./map": "./src/map.js",
+    "./join": "./src/join.js",
+    "./tap": "./src/tap.js"
   }
 }

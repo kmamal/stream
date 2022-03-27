@@ -1,8 +1,7 @@
 const { once } = require('events')
 
 const write = async (stream, data) => {
-	const chunk = Buffer.from(data)
-	const more = stream.write(chunk)
+	const more = stream.write(data)
 	if (more) { return }
 	await once(stream, 'drain')
 }

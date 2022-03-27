@@ -7,7 +7,7 @@ const read = async (stream, size) => {
 		const rest = stream[kRest]
 		if (!rest) { break readRest }
 		const result = rest.slice(0, size)
-		const remaining = rest.slice(size)
+		const remaining = rest.slice(result.length)
 		stream[kRest] = remaining.length > 0 ? remaining : 0
 		return result
 	}
